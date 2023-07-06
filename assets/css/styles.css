@@ -719,6 +719,6 @@ input {
   }
   .home__container,
   .home__img {
-    height: 640px;
+    height: 100vh;
   }
 }
