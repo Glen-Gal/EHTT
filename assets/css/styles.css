@@ -219,7 +219,16 @@ input {
 }
 
 .nav__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
   font-weight: var(--font-semi-bold);
+}
+
+.nav__logo img {
+  width: 60px;
+  object-fit: cover;
 }
 
 .nav__toggle {
