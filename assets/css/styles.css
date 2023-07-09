@@ -98,7 +98,13 @@ body.dark-theme {
 
 .change-theme {
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.3rem;
+  transition: 0.4s ease;
+}
+
+.change-theme:active {
+  scale: 70%;
+  transition: 0.4s ease;
 }
 
 .change-theme-name {
