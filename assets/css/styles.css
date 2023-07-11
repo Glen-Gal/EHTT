@@ -232,7 +232,8 @@ input {
 }
 
 .nav__toggle {
-  font-size: 1.2rem;
+  margin-top: 5px;
+  font-size: 1.7rem;
   cursor: pointer;
 }
 
@@ -277,6 +278,10 @@ input {
   font-size: 1.5rem;
   color: var(--title-color);
   cursor: pointer;
+}
+
+.logo2 {
+  display: none;
 }
 
 /* show menu */
@@ -735,5 +740,15 @@ input {
   .home__container,
   .home__img {
     height: 100vh;
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .logo1 {
+    display: none;
+  }
+
+  .logo2 {
+    display: flex;
   }
 }
