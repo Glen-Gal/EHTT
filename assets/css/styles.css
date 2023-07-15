@@ -421,28 +421,25 @@ input {
   overflow: var(--img-hidden);
 }
 
-.about__img-one {
-  width: 130px;
+.about__img1,
+.about__img2 {
+  height: 350px;
 }
 
-.about__img-two {
-  width: 180px;
-}
-
-.about__img-one,
-.about__img-two {
+.about__img1,
+.about__img2 {
   transition: var(--img-transition);
 }
 
-.about__img-one:hover,
-.about__img-two:hover {
+.about__img1:hover,
+.about__img2:hover{
   transform: var(--img-scale);
 }
 
 /*=============== PLACES ===============*/
 .place__card {
   position: relative;
-  width: 200px;
+  width: 300px;
   overflow: var(--img-hidden);
 }
 
@@ -453,7 +450,7 @@ input {
 }
 
 .place__title {
-  color: hsl(175, 50%, 50%);
+  color: hsl(175, 50%, 95%);
 }
 
 .place__title {
@@ -468,6 +465,7 @@ input {
 
 .place__img {
   transition: var(--img-transition);
+  height: 400px;
 }
 
 .place__img:hover {
