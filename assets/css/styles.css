@@ -8,10 +8,10 @@
   /*========== Colors ==========*/
   /* Change favorite color to match images */
   /*Green dark 190 - Green 171 - Grren Blue 200*/
-  --hue-color: 175;
+  --hue-color: 200;
 
   /* HSL color mode */
-  --first-color: hsl(var(--hue-color), 50%, 50%);
+  --first-color: hsl(var(--hue-color), 100%, 46%);
   --first-color-second: hsl(var(--hue-color), 64%, 22%);
   --first-color-alt: hsl(var(--hue-color), 64%, 15%);
   --title-color: hsl(var(--hue-color), 64%, 18%);
@@ -329,7 +329,7 @@ input {
   height: 100vh;
   object-fit: cover;
   object-position: 83%;
-  filter: brightness(70%);
+  filter: brightness(68%);
 }
 
 .home__container {
@@ -337,6 +337,11 @@ input {
   height: calc(100vh - var(--header-height));
   align-content: center;
   row-gap: 3rem;
+}
+
+.home__data-subtitle {
+  margin-left: 0.25em;
+  letter-spacing: 1.4px;
 }
 
 .home__data-subtitle,
@@ -355,6 +360,7 @@ input {
   font-size: var(--biggest-font-size);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-2-5);
+  letter-spacing: -1.4px;
 }
 
 .home__social {
@@ -432,7 +438,7 @@ input {
 }
 
 .about__img1:hover,
-.about__img2:hover{
+.about__img2:hover {
   transform: var(--img-scale);
 }
 
@@ -548,7 +554,7 @@ input {
 /*========== SCROLL UP ==========*/
 .scrollup {
   position: fixed;
-  right: 1rem;
+  right: 3em;
   bottom: -20%;
   background-color: var(--first-color);
   padding: 0.5rem;
