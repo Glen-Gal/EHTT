@@ -1,255 +1,349 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
-        <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
 
-        <!--=============== REMIXICONS ===============-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-        
-        <!--=============== SWIPER CSS ===============-->
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--=============== REMIXICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
-        <title>Eastern Himalaya Tours & Travel</title>
-    </head>
-    <body>
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">
-                <img src="./assets/img/logo/logo-01.svg" alt="">
-                    Eastern Himalaya Tours & Travel
-                </a>
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
-                <a href="#" class="nav__logo logo2">
-                    <img class="nav-title1" src="./assets/img/logo/logo-01.svg" alt="">
-                        EHTT
-                </a>
+    <!-- G Lightbox -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
+    />
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">Home</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">About</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#place" class="nav__link">Places</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="" class="nav__link">Contact</a>
-                        </li>
-                    </ul>
-
-                    <div class="nav__dark">
-                        <!-- Theme change button -->
-                        <span class="change-theme-name">Dark mode</span>
-                        <i class="ri-moon-line change-theme" id="theme-button"></i>
-                    </div>
-
-                    <i class="ri-close-line nav__close" id="nav-close"></i>
-                </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <iconify-icon icon="ci:hamburger-md"></iconify-icon>
-                </div>
-            </nav>
-        </header>
-
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home" id="home">
-                <img src="assets/img/home1.jpg" alt="" class="home__img">
-
-                <div class="home__container container grid">
-                    <div class="home__data">
-                        <span class="home__data-subtitle">Discover Bhutan</span>
-                        <h1 class="home__data-title">Explore Bhutan  <br> <b>with Ease</b></h1>
-                        <a href="#" class="button">Travel with Us</a>
-                    </div>
-
-                    <div class="home__social">
-                        <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
-                            <i class="ri-facebook-box-fill"></i>
-                        </a>
-                        <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
-                            <i class="ri-instagram-fill"></i>
-                        </a>
-                        <a href="https://twitter.com/" target="_blank" class="home__social-link">
-                            <i class="ri-twitter-fill"></i>
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-            <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
-                <div class="about__container container grid">
-                    <div class="about__data">
-                        <h2 class="section__title about__title">About Us</h2>
-                        <p class="about__description">Welcome to Eastern Himalaya Tours & Travels, your gateway to discovering the wonders of Bhutan! 
-                            As a tour and travel agency based in the Kingdom of Bhutan, we offer unforgettable experiences that showcase the country's 
-                            rich cultural heritage, pristine landscapes, and profound spirituality.
-                        </p>
-                    </div>
-
-                    <div class="about__img">
-                        <div class="about__img-overlay">
-                            <img src="assets/img/about1.jpg" alt="" class="about__img1">
-                        </div>
-                        <div class="about__img-overlay">
-                            <img src="assets/img/about2.jpg" alt="" class="about__img2">
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            <!--==================== PLACE ====================-->
-            <section class="place section" id="place">
-                <h2 class="section__title">Discover the most beautiful places</h2>
-                
-                <div class="place__container container swiper-container">
-                    <div class="swiper-wrapper">
-                        <!--==================== PLACE 1 ====================-->
-                        <div class="place__card swiper-slide">
-                            <img src="assets/img/place1.jpg" alt="" class="place__img">
-                            <div class="place__data">
-                                <h2 class="place__title">place1</h2>
-                            </div>
-                        </div>
-
-                        <!--==================== PLACE 2 ====================-->
-                        <div class="place__card swiper-slide">
-                            <img src="assets/img/place2.jpg" alt="" class="place__img">
-                            <div class="place__data">
-                                <h2 class="place__title">place2</h2>
-                            </div>
-                        </div>
-
-                        <!--==================== PLACE 3 ====================-->
-                        <div class="place__card swiper-slide">
-                            <img src="assets/img/place3.jpg" alt="" class="place__img">
-                            <div class="place__data">
-                                <h2 class="place__title">place3</h2>
-                            </div>
-                        </div>
-
-                        <!--==================== PLACE 4 ====================-->
-                        <div class="place__card swiper-slide">
-                            <img src="assets/img/place4.jpg" alt="" class="place__img">
-                            <div class="place__data">
-                                <h2 class="place__title">place4</h2>
-                            </div>
-                        </div>
-
-                        <!--==================== PLACE 5 ====================-->
-                        <div class="place__card swiper-slide">
-                            <img src="assets/img/place5.jpg" alt="" class="place__img">
-                            <div class="place__data">
-                                <h2 class="place__title">place5</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-        <!--==================== FOOTER ====================-->
-        <footer class="footer section">
-            <div class="footer__container container grid">
-                <div class="footer__content grid">
-                    <div class="footer__data">
-                        <h3 class="footer__title">Eastern Himalaya Tour & Travels</h3>
-                        <p class="footer__description">Travel around Bhutan as you choose the destination, <br>
-                            while we offer you the experience.
-                        </p>
-                        <div>
-                            <a href="https://www.facebook.com/" target="_blank" class="footer__social">
-                                <i class="ri-facebook-box-fill"></i>
-                            </a>
-                            <a href="https://twitter.com/" target="_blank" class="footer__social">
-                                <i class="ri-twitter-fill"></i>
-                            </a>
-                            <a href="https://www.instagram.com/" target="_blank" class="footer__social">
-                                <i class="ri-instagram-fill"></i>
-                            </a>
-                            <a href="https://www.youtube.com/" target="_blank" class="footer__social">
-                                <i class="ri-youtube-fill"></i>
-                            </a>
-                        </div>
-                    </div>
-    
-                    <div class="footer__data">
-                        <h3 class="footer__subtitle">About</h3>
-                        <ul>
-                            <li class="footer__item">
-                                <a href="" class="footer__link">About Us</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="" class="footer__link">Features</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="" class="footer__link">New & Blog</a>
-                            </li>
-                        </ul>
-                    </div>
-    
-                    <div class="footer__data">
-                        <h3 class="footer__subtitle">Company</h3>
-                        <ul>
-                            <li class="footer__item">
-                                <a href="" class="footer__link">Team</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="" class="footer__link">Pricing</a>
-                            </li>
-                        </ul>
-                    </div>
-    
-                    <div class="footer__data">
-                        <h3 class="footer__subtitle">Support</h3>
-                        <ul>
-                            <li class="footer__item">
-                                <a href="" class="footer__link">FAQs</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="" class="footer__link">Support Center</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="" class="footer__link">Contact Us</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="footer__rights">
-                    <p class="footer__copy">&#169; 2023 Lynx. All rigths reserved.</p>
-                    <div class="footer__terms">
-                        <a href="#" class="footer__terms-link">Terms & Agreements</a>
-                        <a href="#" class="footer__terms-link">Privacy Policy</a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-         <!--========== SCROLL UP ==========-->
-        <a href="#" class="scrollup" id="scroll-up">
-            <i class="ri-arrow-up-line scrollup__icon"></i>
+    <title>Eastern Himalaya Tours & Travel</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <img src="./assets/img/logo/logo4dark&light.svg" alt="" />
+          Eastern Himalaya Tours & Travel
         </a>
 
-        <!--=============== SCROLL REVEAL===============-->
-        <script src="assets/js/scrollreveal.min.js"></script>
-        
-        <!--=============== SWIPER JS ===============-->
-        <script src="assets/js/swiper-bundle.min.js"></script>
+        <a href="#" class="nav__logo logo2">
+          <img
+            class="nav-title1"
+            src="./assets/img/logo/logo4dark&light.svg"
+            alt=""
+          />
+          EHTT
+        </a>
 
-        <!--=============== MAIN JS ===============-->
-        <script src="assets/js/main.js"></script>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#place" class="nav__link">Places</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Contact</a>
+            </li>
+          </ul>
 
-        <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-    </body>
+          <div class="nav__dark">
+            <!-- Theme change button -->
+            <span class="change-theme-name">Dark mode</span>
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+          </div>
+
+          <i class="ri-close-line nav__close" id="nav-close"></i>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <iconify-icon icon="ci:hamburger-md"></iconify-icon>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home" id="home">
+        <img src="assets/img/home1.jpg" alt="" class="home__img" />
+
+        <div class="home__container container grid">
+          <div class="home__data">
+            <span class="home__data-subtitle">Discover Bhutan</span>
+            <h1 class="home__data-title">
+              Explore Bhutan <br />
+              <b>with Ease</b>
+            </h1>
+            <a href="#" class="button">Travel with Us</a>
+          </div>
+
+          <div class="home__social">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              class="home__social-link"
+            >
+              <i class="ri-facebook-box-fill"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="home__social-link"
+            >
+              <i class="ri-instagram-fill"></i>
+            </a>
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              class="home__social-link"
+            >
+              <i class="ri-twitter-fill"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+          <div class="about__data">
+            <h2 class="section__title about__title">About Us</h2>
+            <p class="about__description">
+              Welcome to Eastern Himalaya Tours & Travels, your gateway to
+              discovering the wonders of Bhutan! As a tour and travel agency
+              based in the Kingdom of Bhutan, we offer unforgettable experiences
+              that showcase the country's rich cultural heritage, pristine
+              landscapes, and profound spirituality.
+            </p>
+          </div>
+
+          <div class="about__img">
+            <div class="about__img-overlay">
+              <img
+                src="assets/img/about1.jpg"
+                class="about__img1 glightbox"
+                data-gallery="edu-gallery1"
+                alt=""
+              />
+            </div>
+            <div class="about__img-overlay">
+              <img
+                src="assets/img/about2.jpg"
+                alt=""
+                class="about__img2 glightbox"
+                data-gallery="edu-gallery2"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== PLACE ====================-->
+      <section class="place section" id="place">
+        <h2 class="section__title">Discover the most beautiful places</h2>
+
+        <div class="place__container container swiper-container">
+          <div class="swiper-wrapper">
+            <!--==================== PLACE 1 ====================-->
+            <div class="place__card swiper-slide">
+              <img
+                src="assets/img/place1.jpg"
+                alt=""
+                class="place__img glightbox"
+                data-gallery="edu-gallery3"
+              />
+              <div class="place__data">
+                <h2 class="place__title">place1</h2>
+              </div>
+            </div>
+
+            <!--==================== PLACE 2 ====================-->
+            <div class="place__card swiper-slide">
+              <img
+                src="assets/img/place2.jpg"
+                alt=""
+                class="place__img glightbox"
+                data-gallery="edu-gallery4"
+              />
+              <div class="place__data">
+                <h2 class="place__title">place2</h2>
+              </div>
+            </div>
+
+            <!--==================== PLACE 3 ====================-->
+            <div class="place__card swiper-slide">
+              <img
+                src="assets/img/place3.jpg"
+                alt=""
+                class="place__img glightbox"
+                data-gallery="edu-gallery5"
+              />
+              <div class="place__data">
+                <h2 class="place__title">place3</h2>
+              </div>
+            </div>
+
+            <!--==================== PLACE 4 ====================-->
+            <div class="place__card swiper-slide">
+              <img
+                src="assets/img/place4.jpg"
+                alt=""
+                class="place__img glightbox"
+                data-gallery="edu-gallery6"
+              />
+              <div class="place__data">
+                <h2 class="place__title">place4</h2>
+              </div>
+            </div>
+
+            <!--==================== PLACE 5 ====================-->
+            <div class="place__card swiper-slide">
+              <img
+                src="assets/img/place5.jpg"
+                alt=""
+                class="place__img glightbox"
+                data-gallery="edu-gallery7"
+              />
+              <div class="place__data">
+                <h2 class="place__title">place5</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <div class="footer__content grid">
+          <div class="footer__data">
+            <h3 class="footer__title">Eastern Himalaya Tour & Travels</h3>
+            <p class="footer__description">
+              Travel around Bhutan as you choose the destination, <br />
+              while we offer you the experience.
+            </p>
+            <div>
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="footer__social"
+              >
+                <i class="ri-facebook-box-fill"></i>
+              </a>
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                class="footer__social"
+              >
+                <i class="ri-twitter-fill"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="footer__social"
+              >
+                <i class="ri-instagram-fill"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/"
+                target="_blank"
+                class="footer__social"
+              >
+                <i class="ri-youtube-fill"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer__data">
+            <h3 class="footer__subtitle">About</h3>
+            <ul>
+              <li class="footer__item">
+                <a href="" class="footer__link">About Us</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link">Features</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link">New & Blog</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__data">
+            <h3 class="footer__subtitle">Company</h3>
+            <ul>
+              <li class="footer__item">
+                <a href="" class="footer__link">Team</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link">Pricing</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__data">
+            <h3 class="footer__subtitle">Support</h3>
+            <ul>
+              <li class="footer__item">
+                <a href="" class="footer__link">FAQs</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link">Support Center</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__rights">
+          <p class="footer__copy">&#169; 2023 Lynx. All rigths reserved.</p>
+          <div class="footer__terms">
+            <a href="#" class="footer__terms-link">Terms & Agreements</a>
+            <a href="#" class="footer__terms-link">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line scrollup__icon"></i>
+    </a>
+
+    <!--=============== SCROLL REVEAL===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!-- Js Links -->
+    <!-- Place the script tags for custom JavaScript files after the main library -->
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  </body>
 </html>

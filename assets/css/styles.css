@@ -292,7 +292,7 @@ input {
 /* Change background header */
 .scroll-header {
   background-color: var(--body-color);
-  box-shadow: 0 0 4px rgba(14, 55, 63, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .scroll-header .nav__logo,
@@ -421,6 +421,7 @@ input {
   column-gap: 1rem;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .about__img-overlay {
@@ -614,7 +615,7 @@ input {
   }
   .nav__menu {
     display: flex;
-    column-gap: 1rem;
+    column-gap: 2.5rem;
   }
   .nav__list {
     flex-direction: row;
