@@ -506,6 +506,7 @@ input {
 
 .footer__description {
   margin-bottom: var(--mb-2);
+  font-size: 12px;
 }
 
 .footer__social {
