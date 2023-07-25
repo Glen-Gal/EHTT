@@ -773,7 +773,7 @@ input {
   }
   .about__img1,
   .about__img2 {
-    width: 160px;
+    width: 100%;
     height: 240px;
   }
   .place__card {
