@@ -1,377 +1,366 @@
 <!DOCTYPE html>
-<html style="font-size: 16px" lang="en">
+<html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta
-      name="keywords"
-      content="About Us, Eastern Himalayan Tours &amp;amp; Travels: Unlocking Bhutan&amp;apos;s Mysteries, One Journey at a Time!, 1, We design People Inspired Experiences that create positive change in people&amp;apos;s lives."
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta name="description" content="" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
-    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
 
-    <!-- Title -->
+    <!--=============== REMIXICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/about.css" media="screen">
+    <link rel="stylesheet" href="assets/css/nicepage.css" media="screen">
+
+    <!-- G Lightbox -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
+    />
+
     <title>About Us</title>
-
-    <!-- Link to CSS -->
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-    <link rel="stylesheet" href="./assets/css/nicepage.css" media="screen" />
-    <link rel="stylesheet" href="./assets/css/about.css" media="screen" />
-
-    <!-- Scripts -->
-    <script
-      class="u-script"
-      type="text/javascript"
-      src="assets/js/jquery.js"
-      defer=""
-    ></script>
-    <script
-      class="u-script"
-      type="text/javascript"
-      src="assets/js/nicepage.js"
-      defer=""
-    ></script>
-    <meta name="generator" content="Nicepage 5.13.1, nicepage.com" />
-
-    <!-- Google Fonts -->
-
-    <!-- Roboto -->
-    <link
-      id="u-theme-google-font"
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i"
-    />
-
-    <!-- Raleway -->
-    <link
-      id="u-page-google-font"
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Merriweather:300,300i,400,400i,700,700i,900,900i|Ubuntu:300,300i,400,400i,500,500i,700,700i"
-    />
-    <meta name="theme-color" content="1a1a1a" />
-    <meta property="og:title" content="Home" />
-    <meta property="og:type" content="website" />
-    <meta data-intl-tel-input-cdn-path="intlTelInput/" />
   </head>
+  <body class=>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo logo1">
+          <img src="./assets/img/logo/logo4dark&light.svg" alt="" />
+          Eastern Himalaya Tours & Travel
+        </a>
 
-  <header class="header" id="header">
-    <nav class="nav container">
-      <a href="#" class="nav__logo logo1">
-        <img src="./assets/img/logo/logo4dark&light.svg" alt="" />
-        Eastern Himalaya Tours & Travel
-      </a>
+        <a href="#" class="nav__logo logo2">
+          <img
+            class="nav-title1"
+            src="./assets/img/logo/logo4dark&light.svg"
+            alt=""
+          />
+          EHTT
+        </a>
 
-      <a href="#" class="nav__logo logo2">
-        <img
-          class="nav-title1"
-          src="./assets/img/logo/logo4dark&light.svg"
-          alt=""
-        />
-        EHTT
-      </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="about.html" class="nav__link active-link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#place" class="nav__link">Places</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Contact</a>
+            </li>
+          </ul>
 
-      <div class="nav__menu" id="nav-menu">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="index.html" class="nav__link">Home</a>
-          </li>
-          <li class="nav__item">
-            <a href="about.html" class="nav__link active-link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#place" class="nav__link">Places</a>
-          </li>
-          <li class="nav__item">
-            <a href="" class="nav__link">Contact</a>
-          </li>
-        </ul>
+          <div class="nav__dark">
+            <!-- Theme change button -->
+            <span class="change-theme-name">Dark mode</span>
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+          </div>
 
-        <div class="nav__dark">
-          <!-- Theme change button -->
-          <span class="change-theme-name">Dark mode</span>
-          <i class="ri-moon-line change-theme" id="theme-button"></i>
+          <i class="ri-close-line nav__close" id="nav-close"></i>
         </div>
 
-        <i class="ri-close-line nav__close" id="nav-close"></i>
-      </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <iconify-icon icon="ci:hamburger-md"></iconify-icon>
+        </div>
+      </nav>
+    </header>
 
-      <div class="nav__toggle" id="nav-toggle">
-        <iconify-icon icon="ci:hamburger-md"></iconify-icon>
-      </div>
-    </nav>
-  </header>
-
-  <body class="u-body u-xl-mode" data-lang="en">
-    <main class="main">
-      <section class="home" id="home">
-        <img src="assets/img/home2.jpg" alt="" class="home__img" />
-
-        <div class="home__container container grid">
-            <div class="home__data">
-                <h1 class="home__data-title">
-                About Us
-                </h1>
-            </div>
-
+    <main class="main u-body u-xl-mode">
+        <!--==================== HOME ====================-->
+        <section class="home" id="home">
+          <img src="assets/img/home2.jpg" alt="" class="home__img" />
+  
+          <div class="home__container container grid">
+              <div class="home__data">
+                  <h1 class="home__data-title">
+                  About Us
+                  </h1>
+              </div>
+  
             <div class="home__social">
-                <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
-                    <i class="ri-facebook-box-fill"></i>
-                </a>
-                <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-facebook-box-fill"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="home__social-link"
+              >
                 <i class="ri-instagram-fill"></i>
-                </a>
-                <a href="https://twitter.com/" target="_blank" class="home__social-link">
-                    <i class="ri-twitter-fill"></i>
-                </a>
+              </a>
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-twitter-fill"></i>
+              </a>
             </div>
-        </div>
-    </section>
-
-    <!--==================== ABOUT ====================-->
-    <section class="about section" id="about">
-        <div class="about__container container grid">
-            <div class="about__data">
-                <p class="about__description">
-                    Welcome to Eastern Himalayan Tours & Travels, your gateway to discovering the wonders of Bhutan! 
-                    As a tour and travel agency based in the K​ingdom of Bhutan, we offer unforgettable experiences that 
-                    showcase the country's rich cultural heritage, pristine landscapes, and profound spirituality.
-                </p>
-                <p class="about__description">
-                    At Eastern Himalayan Tours & Travels, we believe that travel is not just about visiting new places; 
-                    it's about creating lifelong memories. With our expert team of travel enthusiasts and local guides, 
-                    we strive to curate unique and personalized itineraries that cater to your specific interests and preferences.
-                </p>
-            </div>
-
-            <div class="about__img">
+          </div>
+        </section>
+  
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+          <div class="about__container container grid">
+              <div class="about__data">
+                  <p class="about__description">
+                      Welcome to Eastern Himalayan Tours & Travels, your gateway to discovering the wonders of Bhutan! 
+                      As a tour and travel agency based in the K​ingdom of Bhutan, we offer unforgettable experiences that 
+                      showcase the country's rich cultural heritage, pristine landscapes, and profound spirituality.
+                  </p>
+                  <p class="about__description">
+                      At Eastern Himalayan Tours & Travels, we believe that travel is not just about visiting new places; 
+                      it's about creating lifelong memories. With our expert team of travel enthusiasts and local guides, 
+                      we strive to curate unique and personalized itineraries that cater to your specific interests and preferences.
+                  </p>
+              </div>
+  
+              <div class="about__img">
+                  <div class="about__img-overlay">
+                      <img
+                      src="assets/img/about/about1.jpg"
+                      class="about__img1 glightbox"
+                      data-gallery="edu-gallery1"
+                      alt=""
+                      />
+                  </div>
+              </div>
+          </div>
+          <br>
+          <div class="about__container container grid">
+              <div class="about__data">
+                  <p class="about__description">
+                      Whether you are looking for a spiritual journey, an adventurous trek through the Himalayas, a cultural immersion 
+                      in Bhutanese traditions, or a relaxing getaway amidst nature, we have the perfect package for you. 
+                      Our itineraries are designed to provide you with an authentic and immersive experience, allowing you to truly 
+                      connect with the beauty and serenity of Bhutan.
+                  </p>
+                  <p class="about__description">
+                      With Eastern Himalayan Tours & Travels, you can rest assured that your travel needs are taken care of. 
+                      We handle everything from accommodation and transportation to permits and guides, ensuring a hassle-free and enjoyable trip. 
+                      Our team is dedicated to providing excellent customer service and creating unforgettable moments for every traveler.
+                      Discover the magic of Bhutan with Eastern Himalayan Tours & Travels. Contact us today to start planning your Bhutan adventure!
+                  </p>
+              </div>
+              <div class="about__img">
                 <div class="about__img-overlay">
                     <img
-                    src="assets/img/about/about1.jpg"
+                    src="assets/img/about/about2.jpg"
                     class="about__img1 glightbox"
                     data-gallery="edu-gallery1"
                     alt=""
                     />
                 </div>
             </div>
-        </div>
-        <br>
-        <div class="about__container container grid">
-            <div class="about__data">
-                <p class="about__description">
-                    Whether you are looking for a spiritual journey, an adventurous trek through the Himalayas, a cultural immersion 
-                    in Bhutanese traditions, or a relaxing getaway amidst nature, we have the perfect package for you. 
-                    Our itineraries are designed to provide you with an authentic and immersive experience, allowing you to truly 
-                    connect with the beauty and serenity of Bhutan.
-                </p>
-                <p class="about__description">
-                    With Eastern Himalayan Tours & Travels, you can rest assured that your travel needs are taken care of. 
-                    We handle everything from accommodation and transportation to permits and guides, ensuring a hassle-free and enjoyable trip. 
-                    Our team is dedicated to providing excellent customer service and creating unforgettable moments for every traveler.
-                    Discover the magic of Bhutan with Eastern Himalayan Tours & Travels. Contact us today to start planning your Bhutan adventure!
-                </p>
-            </div>
-            <div class="about__img">
-              <div class="about__img-overlay">
-                  <img
-                  src="assets/img/about/about2.jpg"
-                  class="about__img1 glightbox"
-                  data-gallery="edu-gallery1"
-                  alt=""
-                  />
+          </div>
+      </section>
+  
+      <!--==================== PLACE ====================-->
+      <section class="u-clearfix u-white u-section-3" id="carousel_45f1">
+          <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+              <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+                  <div class="u-layout">
+                      <div class="u-layout-row">
+                          <div class="u-align-left u-container-style u-layout-cell u-size-32 u-layout-cell-1">
+                              <div class="u-container-layout u-container-layout-1">
+                                  <h1
+                                  class="u-custom-font u-font-merriweather u-text u-text-custom-color-1 u-text-1"
+                                  data-animation-name="customAnimationIn"
+                                  data-animation-duration="1000"
+                                  >
+                                  Eastern Himalayan Tours &amp; Travels: Unlocking Bhutan's
+                                  Mysteries, One Journey at a Time!
+                                  </h1>
+                              </div>
+                          </div>
+                          <div class="u-align-left u-container-style u-layout-cell u-size-28 u-layout-cell-2">
+                              <div class="u-container-layout u-container-layout-2">
+                                  <h6
+                                  class="u-custom-font u-font-ubuntu u-text u-text-custom-color-1 u-text-2"
+                                  data-animation-name="customAnimationIn"
+                                  data-animation-duration="1000"
+                                  >
+                                  Expertise and Specialization
+                                  </h6>
+                                  <h5
+                                  class="u-custom-font u-text u-text-font u-text-3"
+                                  data-animation-direction="Up"
+                                  data-animation-name="customAnimationIn"
+                                  data-animation-duration="1000"
+                                  >
+                                  Adventure tours<br />Cultural immersion<br />Wildlife
+                                  exploration<br />Spiritual journeys
+                                  </h5>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
               </div>
           </div>
-        </div>
-    </section>
-
-    <!--==================== PLACE ====================-->
-    <section class="u-clearfix u-white u-section-3" id="carousel_45f1">
-        <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-            <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
-                <div class="u-layout">
-                    <div class="u-layout-row">
-                        <div class="u-align-left u-container-style u-layout-cell u-size-32 u-layout-cell-1">
-                            <div class="u-container-layout u-container-layout-1">
-                                <h1
-                                class="u-custom-font u-font-merriweather u-text u-text-custom-color-1 u-text-1"
-                                data-animation-name="customAnimationIn"
-                                data-animation-duration="1000"
-                                >
-                                Eastern Himalayan Tours &amp; Travels: Unlocking Bhutan's
-                                Mysteries, One Journey at a Time!
-                                </h1>
-                            </div>
-                        </div>
-                        <div class="u-align-left u-container-style u-layout-cell u-size-28 u-layout-cell-2">
-                            <div class="u-container-layout u-container-layout-2">
-                                <h6
-                                class="u-custom-font u-font-ubuntu u-text u-text-custom-color-1 u-text-2"
-                                data-animation-name="customAnimationIn"
-                                data-animation-duration="1000"
-                                >
-                                Expertise and Specialization
-                                </h6>
-                                <h5
-                                class="u-custom-font u-text u-text-font u-text-3"
-                                data-animation-direction="Up"
-                                data-animation-name="customAnimationIn"
-                                data-animation-duration="1000"
-                                >
-                                Adventure tours<br />Cultural immersion<br />Wildlife
-                                exploration<br />Spiritual journeys
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-      <section class="u-clearfix u-white u-section-4" id="carousel_712e">
-        <div class="u-clearfix u-sheet u-valign-middle-xs u-sheet-1">
-          <h2
-            class="u-align-center u-custom-font u-font-merriweather u-text u-text-custom-color-1 u-text-1"
-            data-animation-name="customAnimationIn"
-            data-animation-duration="1000"
-          >
-            Eastern Himalayan Tours &amp; Travels: Crafting Life-Transforming
-            Experiences, Inspiring Positive Change.
-          </h2>
-          <span
-            class="u-icon u-icon-circle u-text-black u-icon-1"
-            data-animation-name="customAnimationIn"
-            data-animation-duration="1000"
-            ><svg
-              class="u-svg-link"
-              preserveAspectRatio="xMidYMin slice"
-              viewBox="0 0 512 512"
-              style=""
-            >
-              <use
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                xlink:href="#svg-6592"
-              ></use></svg>
-            <svg
-              class="u-svg-content"
-              viewBox="0 0 512 512"
-              x="0px"
-              y="0px"
-              id="svg-6592"
-              style="enable-background: new 0 0 512 512"
-            >
-              <g>
-                <g>
-                  <path
-                    d="M374.108,373.328c-7.829-7.792-20.492-7.762-28.284,0.067L276,443.557V20c0-11.046-8.954-20-20-20    c-11.046,0-20,8.954-20,20v423.558l-69.824-70.164c-7.792-7.829-20.455-7.859-28.284-0.067c-7.83,7.793-7.859,20.456-0.068,28.285    l104,104.504c0.006,0.007,0.013,0.012,0.019,0.018c7.792,7.809,20.496,7.834,28.314,0.001c0.006-0.007,0.013-0.012,0.019-0.018    l104-104.504C381.966,393.785,381.939,381.121,374.108,373.328z"
-                  ></path>
-                </g>
-              </g></svg>
-            </span>
-          <h5
-            class="u-align-center u-custom-font u-font-ubuntu u-text u-text-custom-color-1 u-text-2"
-            data-animation-name="customAnimationIn"
-            data-animation-duration="1000"
-          >
-            Our best PLACES
-          </h5>
-        </div>
       </section>
-      <section
-        class="u-align-center u-clearfix u-white u-section-5"
-        id="carousel_cbf6"
-      >
-        <div class="u-clearfix u-sheet u-sheet-1">
-          <div
-            class="u-expanded-width u-gallery u-layout-grid u-lightbox u-show-text-on-hover u-gallery-1"
-          >
-            <div class="u-gallery-inner u-gallery-inner-1">
-              <div
-                class="u-effect-fade u-effect-hover-zoom u-gallery-item"
-                data-href="https://nicepage.com"
+        <section class="u-clearfix u-white u-section-4" id="carousel_712e">
+          <div class="u-clearfix u-sheet u-valign-middle-xs u-sheet-1">
+            <h2
+              class="u-align-center u-custom-font u-font-merriweather u-text u-text-custom-color-1 u-text-1"
+              data-animation-name="customAnimationIn"
+              data-animation-duration="1000"
+            >
+              Eastern Himalayan Tours &amp; Travels: Crafting Life-Transforming
+              Experiences, Inspiring Positive Change.
+            </h2>
+            <span
+              class="u-icon u-icon-circle u-text-black u-icon-1"
+              data-animation-name="customAnimationIn"
+              data-animation-duration="1000"
+              ><svg
+                class="u-svg-link"
+                preserveAspectRatio="xMidYMin slice"
+                viewBox="0 0 512 512"
               >
+                <use
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#svg-6592"
+                ></use></svg>
+              <svg
+                class="u-svg-content"
+                viewBox="0 0 512 512"
+                x="0px"
+                y="0px"
+                id="svg-6592"
+                style="enable-background: new 0 0 512 512"
+              >
+                <g>
+                  <g>
+                    <path
+                      d="M374.108,373.328c-7.829-7.792-20.492-7.762-28.284,0.067L276,443.557V20c0-11.046-8.954-20-20-20    c-11.046,0-20,8.954-20,20v423.558l-69.824-70.164c-7.792-7.829-20.455-7.859-28.284-0.067c-7.83,7.793-7.859,20.456-0.068,28.285    l104,104.504c0.006,0.007,0.013,0.012,0.019,0.018c7.792,7.809,20.496,7.834,28.314,0.001c0.006-0.007,0.013-0.012,0.019-0.018    l104-104.504C381.966,393.785,381.939,381.121,374.108,373.328z"
+                    ></path>
+                  </g>
+                </g></svg>
+              </span>
+            <h5
+              class="u-align-center u-custom-font u-font-ubuntu u-text u-text-custom-color-1 u-text-2"
+              data-animation-name="customAnimationIn"
+              data-animation-duration="1000"
+            >
+              Our best PLACES
+            </h5>
+          </div>
+        </section>
+        <section
+          class="u-align-center u-clearfix u-white u-section-5"
+          id="carousel_cbf6"
+        >
+          <div class="u-clearfix u-sheet u-sheet-1">
+            <div
+              class="u-expanded-width u-gallery u-layout-grid u-lightbox u-show-text-on-hover u-gallery-1"
+            >
+              <div class="u-gallery-inner u-gallery-inner-1">
                 <div
-                  class="u-back-slide"
-                  data-image-width="5056"
-                  data-image-height="3371"
+                  class="u-effect-fade u-effect-hover-zoom u-gallery-item"
+                  data-href="https://nicepage.com"
                 >
-                  <img
-                    class="u-back-image u-expanded"
-                    src="./assets/img/about/aaron-santelices-ZdwVvRdel8A-unsplash.jpg"
-                  />
+                  <div
+                    class="u-back-slide"
+                    data-image-width="5056"
+                    data-image-height="3371"
+                  >
+                    <img
+                      class="u-back-image u-expanded"
+                      src="./assets/img/about/aaron-santelices-ZdwVvRdel8A-unsplash.jpg"
+                    />
+                  </div>
+                  <div class="u-over-slide u-shading u-over-slide-1"></div>
                 </div>
-                <div class="u-over-slide u-shading u-over-slide-1"></div>
-              </div>
-              <div class="u-effect-fade u-effect-hover-zoom u-gallery-item">
-                <div
-                  class="u-back-slide"
-                  data-image-width="3024"
-                  data-image-height="4032"
-                >
-                  <img
-                    class="u-back-image u-expanded"
-                    src="./assets/img/about/jaanam-haleem-u59AXJaYGzM-unsplash.jpg"
-                  />
+                <div class="u-effect-fade u-effect-hover-zoom u-gallery-item">
+                  <div
+                    class="u-back-slide"
+                    data-image-width="3024"
+                    data-image-height="4032"
+                  >
+                    <img
+                      class="u-back-image u-expanded"
+                      src="./assets/img/about/jaanam-haleem-u59AXJaYGzM-unsplash.jpg"
+                    />
+                  </div>
+                  <div class="u-over-slide u-shading u-over-slide-2"></div>
                 </div>
-                <div class="u-over-slide u-shading u-over-slide-2"></div>
-              </div>
-              <div class="u-effect-fade u-effect-hover-zoom u-gallery-item">
-                <div
-                  class="u-back-slide"
-                  data-image-width="6000"
-                  data-image-height="4000"
-                >
-                  <img
-                    class="u-back-image u-expanded"
-                    src="./assets/img/about/shutterstock_1498748855.webp"
-                  />
+                <div class="u-effect-fade u-effect-hover-zoom u-gallery-item">
+                  <div
+                    class="u-back-slide"
+                    data-image-width="6000"
+                    data-image-height="4000"
+                  >
+                    <img
+                      class="u-back-image u-expanded"
+                      src="./assets/img/about/shutterstock_1498748855.webp"
+                    />
+                  </div>
+                  <div class="u-over-slide u-shading u-over-slide-3"></div>
                 </div>
-                <div class="u-over-slide u-shading u-over-slide-3"></div>
-              </div>
-              <div class="u-effect-fade u-effect-hover-zoom u-gallery-item">
-                <div
-                  class="u-back-slide"
-                  data-image-width="3585"
-                  data-image-height="2017"
-                >
-                  <img
-                    class="u-back-image u-expanded"
-                    src="./assets/img/about/nihar-modi-uMbGXBy7bKs-unsplash.jpg"
-                  />
+                <div class="u-effect-fade u-effect-hover-zoom u-gallery-item">
+                  <div
+                    class="u-back-slide"
+                    data-image-width="3585"
+                    data-image-height="2017"
+                  >
+                    <img
+                      class="u-back-image u-expanded"
+                      src="./assets/img/about/nihar-modi-uMbGXBy7bKs-unsplash.jpg"
+                    />
+                  </div>
+                  <div class="u-over-slide u-shading u-over-slide-4"></div>
                 </div>
-                <div class="u-over-slide u-shading u-over-slide-4"></div>
-              </div>
-              <div class="u-effect-fade u-effect-hover-zoom u-gallery-item">
-                <div
-                  class="u-back-slide"
-                  data-image-width="6000"
-                  data-image-height="4000"
-                >
-                  <img
-                    class="u-back-image u-expanded"
-                    src="./assets/img/about/raimond-klavins-lHfPWkvtJRg-unsplash.jpg"
-                  />
+                <div class="u-effect-fade u-effect-hover-zoom u-gallery-item">
+                  <div
+                    class="u-back-slide"
+                    data-image-width="6000"
+                    data-image-height="4000"
+                  >
+                    <img
+                      class="u-back-image u-expanded"
+                      src="./assets/img/about/raimond-klavins-lHfPWkvtJRg-unsplash.jpg"
+                    />
+                  </div>
+                  <div class="u-over-slide u-shading u-over-slide-5"></div>
                 </div>
-                <div class="u-over-slide u-shading u-over-slide-5"></div>
-              </div>
-              <div class="u-effect-fade u-effect-hover-zoom u-gallery-item">
-                <div
-                  class="u-back-slide"
-                  data-image-width="5518"
-                  data-image-height="3597"
-                >
-                  <img
-                    class="u-back-image u-expanded"
-                    src="./assets/img/about/02travel-well-bhutan-slide-WHU8-superJumbo.jpg"
-                  />
+                <div class="u-effect-fade u-effect-hover-zoom u-gallery-item">
+                  <div
+                    class="u-back-slide"
+                    data-image-width="5518"
+                    data-image-height="3597"
+                  >
+                    <img
+                      class="u-back-image u-expanded"
+                      src="./assets/img/about/02travel-well-bhutan-slide-WHU8-superJumbo.jpg"
+                    />
+                  </div>
+                  <div class="u-over-slide u-shading u-over-slide-6"></div>
                 </div>
-                <div class="u-over-slide u-shading u-over-slide-6"></div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
 
     <!--==================== FOOTER ====================-->
     <footer class="footer section">
@@ -486,7 +475,10 @@
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 
     <!--=============== MAIN JS ===============-->
-    <script src="assets/js/about.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/nicepage.js"></script>
+
 
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
   </body>
