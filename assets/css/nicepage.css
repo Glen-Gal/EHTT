@@ -21381,7 +21381,6 @@ a.pswp__share--download:hover {
 }
 .u-layout-grid .u-gallery-inner {
   display: grid;
-  grid-template-columns: repeat(3, auto);
   flex: 1 1 auto;
 }
 .u-layout-grid .u-gallery-controls {
