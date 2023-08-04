@@ -169,7 +169,7 @@
                 Nu. 4500
                 <sub>/8 Trips</sub>
               </p>
-              <a href="./contacts.html">
+              <a href="#plan__1">
                 <button class="cta-btn">Get started</button>
               </a>
             </div>
@@ -222,7 +222,7 @@
                 Nu. 8000
                 <sub>/9 Trips</sub>
               </p>
-              <a href="./contacts.html">
+              <a href="#plan__2">
                 <button class="cta-btn">Get started</button>
               </a>
             </div>
@@ -269,7 +269,7 @@
       </section>
 
       <!--==================== Plan 1 ====================-->
-      <section class="section">
+      <section class="section" id="plan__1">
         <h2 class="section-title">Atsara Plan</h2>
 
         <div class="place__container container swiper-container">
@@ -395,7 +395,7 @@
           </div>
         </div>
 
-        <div class="plan__desc container">
+        <!-- <div class="plan__desc container">
           <h3>Schedule</h3>
           <strong>Wednesday 29th March 2023</strong>
           <p>Leave for Samdrup Jongkhar from Kanglung</p>
@@ -480,15 +480,33 @@
           <strong>Wednesday 12th April 2023</strong>
           <p>
             Leave Bodhgaya to Gawahati by KYQ Capital Express Train No. 13248 at
-            11.15 PM and arrival at 12.30 PM India Mobile No. 0091-9387663213 B.
-            Mobile No. 17645167 0091-8753914350 B. Mobile No. 17645167
+            11.15 PM and arrival at 12.30 PM
           </p>
           <br />
+        </div> -->
+
+        <div class="plan__desc container">
+          <h1 class="section__title">Schedule</h1>
+          <label class="toggle">
+            <input
+              type="checkbox"
+              id="language-toggle"
+              onclick="updateSchedule()"
+            />
+            <span class="slider">
+              <span class="toggle-label">ENG</span>
+              <span class="toggle-label">DZO</span>
+            </span>
+          </label>
+
+          <div id="schedule-container" class="schedule-container">
+            <!-- The schedule content will be dynamically populated here -->
+          </div>
         </div>
       </section>
 
       <!--==================== Plan 2 ====================-->
-      <section class="section">
+      <section class="section" id="plan__2">
         <h2 class="section-title">Bumpa Plan</h2>
 
         <div class="place__container container swiper-container">
@@ -738,6 +756,7 @@
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/schedule.js"></script>
     <script src="assets/js/places.js"></script>
 
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>

@@ -161,3 +161,42 @@ var glightbox = GLightbox({
 });
 
 feather.replace();
+
+// Toggle Language
+
+function updateSchedule() {
+  var languageToggle = document.getElementById("language-toggle");
+  var selectedLanguage = languageToggle.checked ? "dzongkha" : "english";
+
+  var scheduleContainer = document.getElementById("schedule-container");
+  scheduleContainer.innerHTML = ""; // Clear previous content
+
+  var schedule;
+  if (selectedLanguage === "english") {
+    schedule = englishSchedule;
+  } else if (selectedLanguage === "dzongkha") {
+    schedule = dzongkhaSchedule;
+  } else {
+    // Handle other language options here, if available
+  }
+
+  // Populate the schedule content in the chosen language
+  schedule.forEach(function (item) {
+    var dateElement = document.createElement("h4");
+    dateElement.textContent = item.date;
+
+    var descriptionElement = document.createElement("p");
+    descriptionElement.textContent = item.description;
+
+    var brElement = document.createElement("br");
+
+    scheduleContainer.appendChild(dateElement);
+    scheduleContainer.appendChild(descriptionElement);
+    scheduleContainer.appendChild(brElement);
+  });
+}
+
+// Initialize the schedule with English content on page load
+document.addEventListener("DOMContentLoaded", function () {
+  updateSchedule();
+});

@@ -1,3 +1,12 @@
+* {
+  ::selection {
+    /* Change highlight background color to black */
+    background: #000;
+    /* Change highlight text color to white */
+    color: #fff;
+  }
+}
+
 .u-section-1 {
   background-image: none;
   min-height: 806px;

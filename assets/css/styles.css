@@ -70,6 +70,14 @@
   }
 }
 
+* {
+  ::selection {
+    /* Change highlight background color to black */
+    background: #000;
+    /* Change highlight text color to white */
+    color: #fff;
+  }
+}
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
   --first-color-second: hsl(var(--hue-color), 54%, 12%);
@@ -795,4 +803,3 @@ input {
     height: 350px;
   }
 }
-
