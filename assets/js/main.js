@@ -153,7 +153,6 @@ var glightbox = GLightbox({
   selector: ".glightbox",
   openEffect: "zoom",
   closeEffect: "fade",
-  startAt: 0,
   closeOnOutsideClick: false,
   zoomable: true,
   height: "auto",
