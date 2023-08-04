@@ -328,7 +328,6 @@ input {
   width: 100%;
   height: 100vh;
   object-fit: cover;
-  object-position: 83%;
   filter: brightness(68%);
 }
 
@@ -473,6 +472,7 @@ input {
 .place__img {
   transition: var(--img-transition);
   height: 400px;
+  width: 450px;
 }
 
 .place__img:hover {
@@ -505,6 +505,7 @@ input {
 
 .footer__description {
   margin-bottom: var(--mb-2);
+  font-size: 12px;
 }
 
 .footer__social {
@@ -677,6 +678,13 @@ input {
   .about__description {
     margin-bottom: var(--mb-2);
   }
+  .about__img1,
+  .about__img2 {
+    height: 260px;
+  }
+  .place__card {
+    width: 210px;
+  }
   .place__container {
     width: 610px;
     margin-left: auto;
@@ -684,6 +692,9 @@ input {
   }
   .place__container {
     padding-top: 2rem;
+  }
+  .place__img {
+    width: 400px;
   }
   .experience__overlay:nth-child(1) {
     width: 363px;
@@ -707,14 +718,8 @@ input {
   .home__container {
     grid-template-rows: 2fr 0.5fr;
   }
-  .about__img-one {
-    width: 230px;
-  }
-  .about__img-two {
-    width: 290px;
-  }
   .place__card {
-    width: 237px;
+    width: 240px;
   }
   .place__container {
     width: 700px;
@@ -748,12 +753,46 @@ input {
   }
 }
 
+@media screen and (min-height: 425px) {
+  .about__img1,
+  .about__img2 {
+    height: 260px;
+  }
+  .place__card {
+    width: 280px;
+  }
+}
+
 @media screen and (max-width: 385px) {
   .logo1 {
     display: none;
   }
-
   .logo2 {
     display: flex;
   }
+  .about__img1,
+  .about__img2 {
+    width: 100%;
+    height: 240px;
+  }
+  .place__card {
+    width: 250px;
+    height: 380px;
+  }
+  .place__img {
+    width: 300px;
+  }
 }
+
+@media screen and (max-width: 330px) {
+  .about__img1,
+  .about__img2 {
+    width: 150px;
+    height: 200px;
+  }
+  .place__card {
+    width: 220px;
+    height: 350px;
+  }
+}
+
