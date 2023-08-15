@@ -19,6 +19,8 @@
   --text-color-light: hsl(var(--hue-color), 8%, 60%);
   --input-color: hsl(var(--hue-color), 24%, 97%);
   --body-color: hsl(var(--hue-color), 100%, 99%);
+  --body-color: hsl(var(--hue-color), 100%, 99%);
+  --heading-color: hsl(var(--hue-color), 100%, 98%);
   --white-color: #fff;
   --black-color: #000;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
@@ -87,6 +89,7 @@ body.dark-theme {
   --text-color: hsl(var(--hue-color), 8%, 75%);
   --input-color: hsl(var(--hue-color), 29%, 16%);
   --body-color: hsl(var(--hue-color), 0%, 10%);
+  --heading-color: hsl(var(--hue-color), 0%, 13%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
 }
@@ -536,8 +539,9 @@ input {
   display: flex;
   flex-direction: column;
   gap: 1em;
-  background-color: #f6f8fc;
+  background-color: var(--heading-color);
   padding: 2em;
+  color: var(--text-color);
 }
 
 .pricing-card .heading h4 {
@@ -565,7 +569,7 @@ input {
   /* 009cea */
   border: 2px solid #171717;
   background-color: transparent;
-  color: #171717;
+  color: var(--text-color);
 
   font-size: 1rem;
 }
@@ -587,6 +591,7 @@ input {
   padding-bottom: 1.25rem;
   font-size: 1rem;
   text-align: left;
+  color: var(--text-color);
 }
 
 .pricing-card .features li i,
