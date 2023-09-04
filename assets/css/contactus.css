@@ -9,11 +9,11 @@
 
 .container1 {
   width: 100%;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px 16%;
-  padding-top: 7rem;
 }
 
 .container1 .row {
@@ -29,6 +29,7 @@
 .row section.left {
   flex-basis: 35%;
   min-width: 320px;
+  margin-right: 60px;
 }
 .row section.right {
   flex-basis: 60%;
@@ -139,6 +140,7 @@ section.left .socialMedia {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding-top: 86px;
 }
 .row section.right .inputGroup {
   margin: 18px 0px;

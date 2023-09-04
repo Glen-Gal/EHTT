@@ -377,7 +377,7 @@ input {
 }
 
 .home__social-link {
-  font-size: 2.2rem;
+  font-size: 1.2rem;
   width: max-content;
 }
 
@@ -493,6 +493,9 @@ input {
 }
 
 /*=============== FOOTER ===============*/
+.footer__container {
+  row-gap: 5rem;
+}
 
 .footer__content {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
