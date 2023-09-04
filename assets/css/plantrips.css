@@ -19,9 +19,14 @@
   --text-color-light: hsl(var(--hue-color), 8%, 60%);
   --input-color: hsl(var(--hue-color), 24%, 97%);
   --body-color: hsl(var(--hue-color), 100%, 99%);
+  --body-color: hsl(var(--hue-color), 100%, 99%);
+  --heading-color: hsl(var(--hue-color), 100%, 98%);
   --white-color: #fff;
+  --black-color: #000;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 75%);
+  --boxShadow-color: hsl(var(--hue-color), 1%, 50%);
+  --border-color: hsl(227, 56%, 94%);
 
   /*========== Font and typography ==========*/
   --body-font: "Open Sans", sans-serif;
@@ -78,6 +83,7 @@
     color: #fff;
   }
 }
+
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
   --first-color-second: hsl(var(--hue-color), 54%, 12%);
@@ -85,8 +91,11 @@ body.dark-theme {
   --text-color: hsl(var(--hue-color), 8%, 75%);
   --input-color: hsl(var(--hue-color), 29%, 16%);
   --body-color: hsl(var(--hue-color), 0%, 10%);
+  --heading-color: hsl(var(--hue-color), 0%, 13%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+  --boxShadow-color: hsl(var(--hue-color), 1%, 60%);
+  --border-color: hsl(13, 56%, 6%);
 }
 
 /*========== Button Dark/Light ==========*/
@@ -190,11 +199,6 @@ input {
   text-align: center;
   text-transform: capitalize;
   margin-bottom: var(--mb-2);
-}
-
-.qoute__title {
-  display: flex;
-  justify-content: right;
 }
 
 .container {
@@ -455,6 +459,318 @@ input {
   transform: var(--img-scale);
 }
 
+/*=============== PRICES ===============*/
+
+.section-title {
+  color: var(--text-color);
+  font-size: 2rem;
+  margin-block: 1em;
+  font-weight: bold;
+  max-width: max-content;
+  margin-inline: auto;
+}
+
+.pricing-plans {
+  gap: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  white-space: nowrap;
+  width: 100%;
+  padding: 64px;
+
+  color: var(--black-color);
+}
+
+.pricing-card {
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.off {
+  position: absolute;
+  right: -45%;
+  top: 0%;
+  background-color: #009cea;
+  padding: 1em;
+  padding-top: 4em;
+  width: 100%;
+  color: white;
+  transform: translate(-50%, -50%);
+  transform: rotate(40deg);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.off p {
+  transform: rotate(0deg);
+  position: relative;
+  top: -10px;
+  right: 30px;
+}
+
+.pricing-card:hover {
+  box-shadow: var(--boxShadow-color) 0px 10px 10px;
+  transition: all 0.2s ease;
+}
+
+.pricing-card:active {
+  transform: scale(0.97);
+}
+
+.pricing-card.current-choice {
+  box-shadow: var(--boxShadow-color) 0px 10px 20px;
+}
+
+.pricing-card.current-choice .cta-btn {
+  color: #ffffff;
+  background-color: #009cea;
+  border: 2px solid transparent;
+}
+
+/* Heading */
+
+.pricing-card .heading {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background-color: var(--heading-color);
+  padding: 2em;
+  color: var(--text-color);
+}
+
+.pricing-card .heading h4 {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.pricing-card .price {
+  position: relative;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.pricing-card .price sub {
+  position: absolute;
+  bottom: 14px;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.pricing-card .cta-btn {
+  margin: auto;
+  padding: 0.8em 2em;
+  border-radius: 4px;
+  /* 009cea */
+  border: 2px solid #171717;
+  background-color: transparent;
+  color: var(--text-color);
+
+  font-size: 1rem;
+}
+
+.pricing-card .cta-btn:active,
+.pricing-card .cta-btn:hover {
+  color: #ffffff;
+  border: 2px solid transparent;
+  background-color: #009cea;
+  transition: all 0.3s ease;
+}
+
+/* Features */
+.pricing-card .features {
+  padding: 2em;
+}
+
+.pricing-card .features li {
+  padding-bottom: 1.25rem;
+  font-size: 1rem;
+  text-align: left;
+  color: var(--text-color);
+}
+
+.pricing-card .features li i,
+.pricing-card .features li strong {
+  font-size: 1rem;
+  text-align: left;
+}
+
+.pricing-card .features li strong {
+  padding-left: 24px;
+}
+
+/* Trip Descriptions */
+
+.plan__desc {
+  margin-block: 2em;
+}
+.plan__desc h1 {
+  margin-block: 3em;
+  margin-block-end: 1em;
+}
+
+/* Toggle Language */
+
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 65px;
+  height: 34px;
+
+  margin-bottom: 2rem;
+}
+
+.toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(31px);
+}
+
+/* Style for toggle labels */
+.toggle-label {
+  display: none;
+  color: black;
+  font-size: 8px;
+  line-height: 34px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 8px;
+  bottom: 0;
+  z-index: 1;
+  transition: 0.4s;
+}
+
+/* Show ENG label when toggle is not checked (English is selected) */
+input:not(:checked) + .slider .toggle-label:first-child {
+  display: block;
+  transition: 0.4s;
+}
+
+input:checked + .slider .toggle-label {
+  transform: translateX(31px);
+  transition: 0.4s;
+}
+
+/* Show SPAN label when toggle is checked (Spanish is selected) */
+input:checked + .slider .toggle-label:last-child {
+  display: block;
+  transition: 0.4s;
+}
+
+.schedule-container h4 {
+  font-size: 1.3rem;
+}
+.schedule-container p {
+  font-size: 1rem;
+}
+
+/*-----------------------------------*\
+      #MEDIA QUERIES
+    \*-----------------------------------*/
+
+/**
+     * responsive for larger than 550px screen
+     */
+
+@media (min-width: 550px) {
+  /**
+           * Services
+           */
+
+  .pricing-card {
+    width: auto;
+    min-width: 400px;
+  }
+
+  .pricing-card .features {
+    padding: 2em 4em;
+  }
+
+  .section-title {
+    font-size: 3rem;
+  }
+}
+
+/**
+         * responsive for larger than 768px screen
+         */
+
+@media (min-width: 768px) {
+  /**
+           * SERVICE
+           */
+
+  .shimmer img {
+    left: 25%;
+  }
+}
+
+/**
+         * responsive for larger than 992px screen
+         */
+
+@media (min-width: 992px) {
+  /**
+           * SERVICE
+           */
+
+  .service-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .section-title {
+    font-size: 3rem;
+  }
+}
+
 /*=============== PLACES ===============*/
 .place__card {
   position: relative;
@@ -463,9 +779,13 @@ input {
 }
 
 .place__data {
+  width: 100%;
   position: absolute;
-  bottom: 1.5rem;
-  left: 1rem;
+  bottom: 0;
+  left: 0;
+  padding: 2em 1em;
+
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .place__title {
@@ -488,6 +808,12 @@ input {
   width: 450px;
 }
 
+.place__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .place__img:hover {
   transform: var(--img-scale);
 }
@@ -497,7 +823,18 @@ input {
   background-image: none;
 }
 
+.fa-check {
+  color: #0cc042;
+}
+
+.fa-x {
+  color: #ff0000;
+}
+
 /*=============== FOOTER ===============*/
+.footer__container {
+  row-gap: 5rem;
+}
 
 .footer__content {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -733,10 +1070,6 @@ input {
   }
   .place__container {
     width: 700px;
-  }
-  .place__data {
-    left: 1.5rem;
-    bottom: 2rem;
   }
   .place__title {
     font-size: var(--h2-font-size);
