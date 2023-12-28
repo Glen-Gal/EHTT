@@ -1,0 +1,12 @@
+img {
+    width: 100%;
+}
+.photo-grid-container {
+    margin: 15px auto;
+    column-count: 3;
+    width: 67%;
+}
+.photo-grid-item {
+    margin: 0 auto 15px;
+    width: 100%;
+}
