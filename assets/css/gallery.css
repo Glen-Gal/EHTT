@@ -1,5 +1,6 @@
 img {
     width: 100%;
+    display: block;
 }
 .photo-grid-container {
     margin: 15px auto;
