@@ -1,8 +1,8 @@
 # EHTT
-Eastern Himalayan Tours and Travels @2023
+Eastern Himalayan Tours and Travels @2024
 
 # Demo
-https://ehtt-one.vercel.app/
+ehtt.bt
 
 # Group Members
 1. Chencho Wangdi
